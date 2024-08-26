@@ -12,3 +12,21 @@
   background:linear-gradient(pink, rgb(162, 199, 229));
 }
 
+.tutorial-credit {
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  font-size: 0.7vw;
+  color: #888;
+  font-family: Arial, sans-serif;
+  text-align: right;
+}
+
+
+@media (max-width: 600px) {
+  .tutorial-credit {
+      font-size: 2vw; /* Larger font size for smaller screens */
+      right: 5vw;     /* Adjust position to ensure it's not too close to the edge */
+      bottom: 5vw;
+  }
+}
