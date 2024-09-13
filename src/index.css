@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.app{
+
+.app {
   min-height: 100vh;
   display: grid;
-  background:linear-gradient(pink, rgb(162, 199, 229));
+  background: linear-gradient(pink, rgb(162, 199, 229));
 }
+
 
 .tutorial-credit {
   position: fixed;
@@ -24,9 +26,14 @@
 
 
 @media (max-width: 600px) {
+  .app {
+    padding: 20px;
+  }
+
   .tutorial-credit {
-      font-size: 2vw; /* Larger font size for smaller screens */
-      right: 5vw;     /* Adjust position to ensure it's not too close to the edge */
-      bottom: 5vw;
+    font-size: 3.5vw;
+    right: 5vw;       
+    bottom: 5vw;      
+    text-align: center; 
   }
 }
